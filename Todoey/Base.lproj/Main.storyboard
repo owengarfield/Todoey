@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="nQ1-Sd-fsi" id="5dd-lo-HTa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="kIP-db-wNi"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="kIP-db-wNi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GDc-iH-wgP">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="nQ1-Sd-fsi" id="z0e-PP-JS1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYt-ZJ-5dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
